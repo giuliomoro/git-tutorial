@@ -80,9 +80,9 @@ git log --graph --oneline --decorate --all
 git log --graph --oneline --decorate --all --color=always | sed "s/\(.\{,200\}\).*/\1/" | less -r
 ```
 
-## Joining branches
+## Joining branches
 
-### Merging
+### Merging
 
 (from `git merge --help`)
 
@@ -101,7 +101,7 @@ git log --graph --oneline --decorate --all --color=always | sed "s/\(.\{,200\}\)
                D---E---F---G---H master
 ```
 
-### Rebasing
+### Rebasing
 
 (from `git rebase --help`)
 
