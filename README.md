@@ -7,7 +7,7 @@ Clone a repository onto your computer from a remote:
 git clone https://github.com/giuliomoro/git-tutorial
 ```
 
-Review your local changes. To see what files have changed:
+View your local changes. To see what files have changed:
 ```
 git status
 ```
@@ -31,7 +31,7 @@ Get commits from the remote:
 git pull
 ```
 
-## Quick glossary
+## Quick glossary
 
 - _repository_ (_repo_): a virtual storage for your project, which allows to save and inspect different versions of the code (e.g.: a folder on your computer, or on a server)
 - _commit_: a set of changes to the files in the repo, complete with a date, author and message. This is normally represented by a long hex hash (e.g.: c693597d37a6b0c5ef66c40969e745c70d0c0d53)
@@ -58,6 +58,8 @@ git log --stat
 ```
 
 ## Temporarily undo my changes but do not throw them away
+
+This way you can test whether it was working before you made those changes.
 
 Stash them:
 ```
@@ -122,13 +124,21 @@ git log --graph --oneline --decorate --all --color=always | sed "s/\(.\{,200\}\)
                D---E---F---G master
 ```
 
-Note that in the final form, we have `A'`, `B'` and `C'`, which are commits that have the same content as `A`, `B`, and `C`, respectively, but different metadata (because the parent commit of `A` is `E`, and the parent commit of `A'` is `G`).
+Note that in the final form, we have `A'`, `B'` and `C'`, which are commits that have the same content as `A`, `B`, and `C`, respectively, but different metadata (because the parent commit of `A` is `E`, and the parent commit of `A'` is `G`): we have rewritten history for the `topic` branch.
+
+### Pull
+
+`git pull` vs `git pull --rebase`
 
 ### Conflicts
 
 When both branches have changed the same lines of a file, a `merge` or `rebase` operation will cause conflicts. These are highlighted as such in the code, and need to be fixed before the operation can complete. This can be done by manually editing the conflicting files and/or using dedicated tools, such as `vimdiff` or `FileMerge`
 
 External link: [use FileMerge as mergetool](https://gist.github.com/bkeating/329690)
+
+## Deleting stuff
+
+You don't (but there are plenty of ways to do it).
 
 ## Bela workflow
 (or, more in general: how to make your repo talk to the internet when it has no internet connection, but is connected to something that has an internet connection)
