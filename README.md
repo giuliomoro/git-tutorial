@@ -163,7 +163,6 @@ git remote add board root@bela.local:Bela/projects/myproject
 git remote add origin git@github.com:giuliomoro/myproject
 git fetch board
 git checkout master
-git push board
 ```
 
 ### Every time you want to synchronize
