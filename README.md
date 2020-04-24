@@ -1,6 +1,6 @@
 # Resources for a basic barebone git tutorial
 
-## Basic commands
+## Basic git commands
 
 Clone a repository onto your computer from a remote:
 ```
