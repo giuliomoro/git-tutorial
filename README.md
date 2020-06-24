@@ -136,7 +136,7 @@ When both branches have changed the same lines of a file, a `merge` or `rebase` 
 
 External link: [use FileMerge as mergetool](https://gist.github.com/bkeating/329690)
 
-## Deleting stuff
+## Deleting stuff
 
 You don't (but there are plenty of ways to do it).
 
