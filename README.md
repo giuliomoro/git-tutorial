@@ -179,14 +179,14 @@ git push origin master
 Run this on the host:
 ```
 git pull origin master
-git push board master:tmp
+git push -f board master:tmp
 ```
 then get onto the board:
 ```
 ssh root@bela.local
 cd Bela/projects/myproject
-git merge tmp
-git branch -D tmp
+git merge --ff-only tmp
+git branch -D tmp # optional
 ```
 
 ## Who, why and when did (I) do this, again?
